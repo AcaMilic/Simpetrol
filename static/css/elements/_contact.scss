@@ -1,0 +1,138 @@
+.contact{
+
+    width: 100%;
+    height: 120vh;
+    background: linear-gradient(50deg, rgba($color-primary, 0.3) 0%, rgba($color-primary-dark, 0.2) 100%), url(../images/backgr.jpg) center center fixed no-repeat;
+    background-size: cover;
+    position: relative;
+    
+.kontakt-heading{
+    margin-bottom: 3rem;
+    color: $white;
+}
+
+    &::before{
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 0;
+        transform: rotate(180deg);
+        width: 100%;
+        height: 12rem;
+        background: url(../images/wave-large.png) center no-repeat;        
+        background-size: cover;
+        z-index: 1;
+    }
+
+    form{
+        margin-top: 5rem;
+        transition: all 4s ease-in-out;
+        @include absCenterContact;
+
+    }
+    .form-control{
+        width: 72rem;
+        background: transparent;
+        border: none;
+        outline: none;
+        border-bottom: 3px solid $color-primary-light;
+        font-size: 1.4rem;
+        margin-bottom: 1.6rem;
+        color: $white;    
+
+        &:focus {
+            outline: none;
+            box-shadow: 0 1rem 2rem rgba($color-primary-dark, .8);
+            border-bottom: 5px solid $color-primary-light;
+            color: $white;
+        }
+
+        &::placeholder {
+            color: $white;
+        }
+
+        input{
+            height: 4.5rem;
+
+        }
+    }
+
+    textarea {
+        resize: none;
+      }
+
+      #success {
+        font-size: 2rem;
+        margin-top: 2rem;
+        color: $color-primary-light;
+        display: none;
+    }
+}
+
+
+.gmap iframe{
+    width: 1140px;
+    height: 450px;
+    margin-bottom: 2rem;
+}
+
+.fas, .far{
+    color: $color-primary-light;
+}
+
+@media only screen and (max-width: 1200px) {
+
+
+.form-control{
+        max-width: 400px;
+    }
+
+    
+.gmap iframe{
+    max-width: 940px;
+}
+}
+
+@media only screen and (max-width: 991px) {
+
+
+    .form-control{
+          max-width: 700px;
+      }
+  
+      .gmap iframe{
+          max-width: 73%;
+      }
+  
+     .contact .form-control{
+         
+          font-size: 1rem;
+          
+    }
+  
+  }
+  
+  
+@media only screen and (max-width: 730px) {
+
+
+    .form-control{
+            max-width: 400px;
+        }
+
+        .contact{
+            background: linear-gradient(50deg, rgba($color-primary, 0.3) 0%, rgba($color-primary-dark, 0.2) 100%), url(../images/rsz_backgr.jpg) center center no-repeat;
+            background-size: cover;
+        }
+        
+
+    }  
+
+    @media only screen and (max-width: 500px) {
+
+
+        .form-control{
+                max-width: 300px;
+            }
+      
+        }  

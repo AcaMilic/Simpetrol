@@ -1,0 +1,104 @@
+.experience-outdoors{
+
+
+    margin-bottom: 10rem;
+
+    position: relative;
+    // display: block;
+
+// .card-image {
+
+//     .pump{
+//         position: absolute;
+//         @include absCenter;
+//         top: 20%;
+//         font-size: 1.5rem;
+//         border: 2px solid $white;
+//         border-radius: 50%;
+//         padding: .8rem;
+//         margin: 1rem 0;   
+//         display: block;
+//         transition: all 350ms ease-in-out;
+//         color: $color-primary-dark;
+//         background: $color-primary-light;
+
+
+//         &:hover{
+//             color: $color-primary-light;
+//             background: transparent;
+//         }
+    
+//     }
+// }
+    .card-image::after{
+        background: linear-gradient(50deg, rgba($color-primary, 0.3) 0%, rgba($color-primary-dark, 0.2) 100%);
+        position: relative;
+        z-index: 100;
+    }
+
+
+    .title-heading{
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 10rem;
+        color: $color-primary-dark;
+    }
+
+    .my-2{
+        background: $color-primary-light;
+    }
+
+    .activities-grid-item{
+        height: 45vh;
+        color: white;
+
+        .fas{
+            font-size: 3rem;
+            color: $white;
+            margin: 2rem 0;
+        }
+
+        h2{
+            text-align: center;
+            font-size: 2rem;
+            color: $color-primary-light;
+            margin-bottom: 2rem;
+        }
+    }
+.karakteristike{
+    margin-top: 2rem;
+    font-size: .8rem;
+    opacity: .5;
+}
+}
+
+  .card-4 {
+    box-shadow: 0 14px 10px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    border-bottom-right-radius: 2rem;
+    transition: all 350ms ease-in-out;
+
+    &:hover{
+
+        box-shadow: 0 3px 2px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
+
+    }
+
+  }
+  
+
+@media only screen and (max-width: 991px) {
+   
+    .mobile-width{
+        width: 100%;
+        display: block;
+    }
+
+    .title-heading p{
+        text-transform: none;
+        text-align: left;
+    }
+  
+  .card-deck .card{
+      margin-bottom: 3rem;
+  }
+  }

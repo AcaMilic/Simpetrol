@@ -1,0 +1,37 @@
+.onama{
+    margin: 3rem 0;
+}
+.about-text{
+    margin: 4rem auto;
+}
+
+.carousel-item{
+    img{
+        width: 600px;
+        height: 400px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+   
+
+    .mobile-width-images{
+        margin: 0 auto;
+        max-width: 720px;
+        max-height: 400px;
+    }
+    .about-text{
+        max-width: 720px;
+    }
+
+  }
+
+
+@media only screen and (max-width: 500px) {
+   
+
+  .mobile-width{
+      margin: 0 auto;
+  }
+
+  }
